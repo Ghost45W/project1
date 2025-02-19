@@ -31,6 +31,20 @@ public class Main {
                 todolist.remove(input.nextLine());
 
             }
+            if (action == 3) {
+                System.out.println("What is the task you would like to update?");
+                todolist.remove(input.nextLine());
+                System.out.println("What would you like it to now be?");
+                todolist.add(input.nextLine());
+            }
+            if (action == 4) {
+                for (String task : todolist) System.out.println(task);;
+            }
+            if (action == 0) {
+                break;
+            }
         }
+
+
     }
 }
